@@ -1,0 +1,336 @@
+/* 	Código de C2.me y de connected2.me - Escrito
+	para usarse con StyleBot o algun otro.
+	Transparencia y posibilidad de añadir algun
+	fondo con cualquier imagen que esté en la red.
+	@ElDainosor - Cualquier cosa está todo con
+	comentarios asi es facil de entender*/
+/*vamos a importar fuentes para la pagina*/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+
+/*Esto define el fondo pegado y arreglado para que ocupe toda la pantalla*/
+html body {
+    background: url(http://www.spaceweather.com/aurora/images2011/24oct11/Randy-Halverson3.jpg) center center fixed;
+}
+
+/*Esto es parte de la parte de arriba*/
+div.radius-bottom {
+    background: url();
+    background-color: rgba(0,0,0,0.5);
+    border: 0px;
+    text-shadow: 0 0px 0px #000;
+    color: grey;
+}
+/*Esto define el logo de la pagina*/
+#adminbar > img {
+    content: url(http://a1.mzstatic.com/us/r30/Purple7/v4/3b/26/8b/3b268b0e-0298-88f9-d9e8-35da12de1bc4/icon175x175.png);
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+/*Esto puede servir para la imagen circular*/
+/*Esta parte borra todo el panel cuadrado que encuadra la imagen*/
+a.avatar {
+    background: rgba(0,0,0,0);
+    color: rgba(0,0,0,0);
+    box-shadow: 0 0 0px #000;
+    border: 0px solid #000;
+}
+
+/*esto hace que la imagen este redonda*/
+a.avatar img {
+    border-radius: 50%;
+    background-color: #000000;
+    color: #000000;
+    border: 3px #fff;
+}
+
+/*Esto se encarga de darle todos los estilos al panel de info etc*/
+/*Esto es mas para eliminar todas las partes blancas que hay abajo, para hacer la transparencia.*/
+div.radius {
+    background-color: rgba(0,0,0,0);
+}
+div.contentheader {
+    background: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+table {
+    background-color: rgba(0,0,0,0);
+}
+div.body-con {
+    background: url();
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+}
+
+/*Y bueno, un poco más de sacar cosas blancas y finalmente, darle el toque de color y transparencia*/
+div.indexinfo {
+    color: #fffcff;
+    text-shadow: 0 0px 0px #000
+;
+    font-family: Raleway;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+#content {
+    color: #D0EAF1;
+    background-color: rgba(0,0,0,0.5);
+    border: 0px;
+}
+#content b {
+    color: #1680c7;
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+}
+ul#widget-menu li ul.widget-sub-nav li a, #tabs li a {
+    background-image: URL();
+    border-color: rgba(0,0,0,0);
+    background-color: rgba(52, 166, 245, 0.3);
+    text-shadow: 0 0px 0px #000;
+    border-top: 0px solid ;
+    border-bottom: 1px solid rgba;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#acceptinfo {
+    font-family: Arimo;
+    font-weight: bold;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.1em;
+}
+
+a.blocktab {
+    color: #b1cfe0;
+    font-family: Arimo;
+}
+
+a.removetab {
+    color: #b1cfe0;
+    font-family: Arimo;
+}
+
+tbody tr td {
+    background: url();
+    background-color: rgba(0,0,0,0);
+    color: #9fc9f5;
+    border-style: none;
+    font-family: Roboto Condensed;
+}
+#tabs {
+    border: 0px;
+}
+
+a.tab {
+    color: white;
+    font-family: Roboto;
+}
+
+tr td b {
+    color: #1680c7;
+    font-family: Roboto Condensed;
+}
+
+div.profileinfo b {
+    text-shadow: 0 0px 0px #000;
+}
+/*Esto es para las imagenes de compartir, son 22x22 asi no ocupan tanto. Aunque reemplazar esto requiere arreglar
+el texto de "Compartir mediante..."*/
+/*imagen 22x22 de fb*/
+
+#sharefb {
+    background: url(https://www.crockerstarr.com/assets/client/Image/Facebook-Logo-Circle.png) no-repeat;
+    height: 25px;
+    width: 25px;
+    background-size: 22px;
+}
+
+/*imagen 22x22 de tw*/
+
+#sharetw {
+    background: url(http://jusan.es/wp-content/uploads/2015/01/1421854662_circle-twitter-32.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 22px;
+}
+
+/*imagen 22x22 de turumbuler*/
+
+#sharetumblr {
+    background: url(http://icons.iconarchive.com/icons/martz90/circle/32/tumblr-icon.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 22px;
+}
+
+/*Fix para el texto de compartir*/
+
+div.indexinfo div {
+    float: center;
+    width: 170px;
+    margin-top: 1px;
+}
+
+/*Inputbox - O la parte de chat. Es recomenable editar los colores por un mismo color claro y oscuro. 
+ el claro se usa en :focus, que es cuando se hace click. El resto es para que este normal*/
+input#inputbox {
+    background-image: url();
+    background-color: rgba(0,0,0,0);
+    border: 1px solid ;
+    text-shadow: 0 0px 0px #000;
+    color: #006FAB;
+}
+
+input#inputbox:focus {
+    background-image: url();
+    background-color: rgba(0,0,0,0);
+    border: 1px solid ;
+    text-shadow: 0 0px 0px #000;
+    color: #0098EA;
+}
+/*Parte del shuffle, usuarios con imagenes circulares*/
+a.shufflelink img {
+    border-radius: 50%;
+}
+/*Esto cambia la burbuja de lo que dice el usuario y su bio*/
+#tiptip_content {
+    background-color: rgba(0,0,0,0.5);
+    background-image: url();
+}
+
+#tiptip_arrow_inner {
+    border-top-color: rgba(0,0,0,0.5);
+}
+
+
+/*FIN DE LA PARTE DE USUARIO CON SESIÓN INICIADA - Proximo: La parte de chat externo.*/
+
+/*Esto se va a usar cuando entremos al chat de alguien, para mantener el mismo estilo*/
+/*Esta es la parte de la info de perfil*/
+
+div.profileinfo b {
+    text-shadow: 0 0px 0px #000;
+}
+div.indexinfo {
+    color: #fffcff;
+    text-shadow: 0 0px 0px #000
+;
+    font-family: Raleway;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+div.profileinfo{ 
+	text-shadow: 0 0px 0px #000
+}
+
+div.contentheader {
+    background: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+
+div.profileimg a img {
+    border-radius: 50%;
+}
+/*Deshabilita el boton de Follow porque no me interesa, aunque  si se quiere se vuelve a habilitar*/
+/*Proximo a hacer: cambiar el color del boton, maybe*/
+button.followtogglex.mar-none.green {
+    display:none;
+}
+
+
+/*FIN DE LA PARTE DE CHAT EXTERNO - Proximo: La parte de la pagina para iniciar sesion*/
+/*Esto saca el fondo del banner de c2 por uno transparente*/
+div.header {
+    background-image: url();
+    background-color: rgba(0,0,0,0.75);
+}
+
+/*Sacando iconos de usuarios en linea y asi*/
+span.icn.icnb_r.icnUsers {
+	display:none;
+}
+span.icn.icnb_r.icnVcard {
+	display:none
+}
+
+/*Cambiando de color las letras a blanco por cuestion de fondo de pagina*/
+div.boxTitle h2 {
+	color:white;
+}
+/*Cajon de usuarios conectados, eliminando bordes y circulando imagenes*/
+body > div.main > div > div:nth-child(1) > div.f_Left.col2x > div > div.boxContent.boxUserOnline {
+	background:rgba(0,0,0,0.75);
+	border:0px;
+	}
+div.alert.shuffleAlert {
+    background-color: rgba(0,87,144,0.75);
+    color: white;
+    border: 0px;
+}
+a.btn.btnGrey {
+	background-image: url();
+	background-color: rgba(0,81,144,0.5);
+	border:1px solid rgba(0,81,144,1);
+	text-shadow: 0 0px 0px #000;
+	color: white;
+}
+span.icn.icnb_l.icnSuffle{
+	display:none;
+}
+body > div.main > div > div:nth-child(1) > div.f_Left.col2x > div > div.boxContent.boxUserOnline > ul li {
+    border: 1px solid rgba(0,0,0,0)
+	;
+}
+body > div.main > div > div:nth-child(1) > div.f_Left.col2x > div > div.boxContent.boxUserOnline > ul li img{
+    border-radius: 50px;
+}
+
+/*Cambiando todo lo del otro lado para que sea similar al costado de usuarios*/
+a.btn.btnBlue {
+	background-image: url();
+	background-color: rgba(0,81,144,0.5);
+	border:1px solid rgba(0,81,144,1);
+	text-shadow: 0 0px 0px #000;
+	color: white;
+}
+a.btn.btnFacebook {
+	background-image: url();
+	background-color: rgba(59,89,152,0.5);
+	border:1px solid rgba(59,89,152,1);
+	text-shadow: 0 0px 0px #000;
+	color: white;
+}
+div.boxContent.signUpbox div {
+    background-image: url();
+    background: rgba(0,0,0,0.75);
+}
+
+body > div.main > div > div:nth-child(1) > div.f_Right.col1x > div > div.boxContent.signUpbox > div > div {
+    background: rgba(0,0,0,0);
+    border: 0px;
+}
+#signupForm > ul {
+    border: 0px;
+}
+/*So much to do, so much to see, cosas que me voy a saltear aqui*/
+/*Footer y final de la página*/
+
+div.footer {
+    background-image: url();
+    background-color: rgba(0,0,0,0.75);
+	text:white;
+}
+/*logo tienda ios 46x46*/
+body > div.footer > div > div.download.f_Right > a:nth-child(1) > img {
+content:url()
+}
+/*logo tienda android 46x46*/
+body > div.footer > div > div.download.f_Right > a:nth-child(2) > img {
+content:url()
+}
