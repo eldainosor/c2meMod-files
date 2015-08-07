@@ -24,6 +24,21 @@ div.radius-bottom {
     text-shadow: 0 0px 0px #000;
     color: grey;
 }
+a.w-link {
+    border-radius: 50%;
+    height: 35px;
+}
+/*imagenes de los paneles*/
+#follow-widget > img {
+	content:url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/usr.png)
+}
+#apmwidget > img {
+	content:url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/inbox.png)
+}
+#widget-menu > li:nth-child(1) > a > img {
+	content:url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/set.png)
+}
+
 /*Esto define el logo de la pagina*/
 #adminbar > img {
     content: url(http://a1.mzstatic.com/us/r30/Purple7/v4/3b/26/8b/3b268b0e-0298-88f9-d9e8-35da12de1bc4/icon175x175.png);
@@ -144,7 +159,13 @@ el texto de "Compartir mediante..."*/
 /*imagen 22x22 de fb*/
 
 #sharefb {
-    background: url(https://www.crockerstarr.com/assets/client/Image/Facebook-Logo-Circle.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/fb_w.png) no-repeat;
+    height: 25px;
+    width: 25px;
+    background-size: 22px;
+}
+#sharefb:hover {
+    background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/fbh.png) no-repeat;
     height: 25px;
     width: 25px;
     background-size: 22px;
@@ -153,21 +174,31 @@ el texto de "Compartir mediante..."*/
 /*imagen 22x22 de tw*/
 
 #sharetw {
-    background: url(http://jusan.es/wp-content/uploads/2015/01/1421854662_circle-twitter-32.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/tw_w.png) no-repeat;
     width: 25px;
     height: 25px;
     background-size: 22px;
 }
-
+#sharetw:hover {
+    background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/twh.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 22px;
+}
 /*imagen 22x22 de turumbuler*/
 
 #sharetumblr {
-    background: url(http://icons.iconarchive.com/icons/martz90/circle/32/tumblr-icon.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/tb_w.png) no-repeat;
     width: 25px;
     height: 25px;
     background-size: 22px;
 }
-
+#sharetumblr:hover {
+    background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/tbh.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 22px;
+}
 /*Fix para el texto de compartir*/
 
 div.indexinfo div {
@@ -325,12 +356,4 @@ div.footer {
     background-image: url();
     background-color: rgba(0,0,0,0.75);
 	text:white;
-}
-/*logo tienda ios 46x46*/
-body > div.footer > div > div.download.f_Right > a:nth-child(1) > img {
-content:url()
-}
-/*logo tienda android 46x46*/
-body > div.footer > div > div.download.f_Right > a:nth-child(2) > img {
-content:url()
 }
