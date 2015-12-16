@@ -1,22 +1,41 @@
-/* 	Código de C2.me y de connected2.me - Escrito
-	para usarse con StyleBot o algun otro.
+/*     Código de C2.me y de connected2.me - Escrito
+    para usarse con StyleBot o algun otro.
 	Transparencia y posibilidad de añadir algun
 	fondo con cualquier imagen que esté en la red.
 	@ElDainosor - Cualquier cosa está todo con
 	comentarios asi es facil de entender*/
+
 /*vamos a importar fuentes para la pagina*/
-@import url(http://fonts.googleapis.com/css?family=Raleway);
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-
-@import url(http://fonts.googleapis.com/css?family=Arimo);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700|Roboto+Condensed:400,300,700);
 
 /*Esto define el fondo pegado y arreglado para que ocupe toda la pantalla*/
+
 html body {
-    background: url(http://www.spaceweather.com/aurora/images2011/24oct11/Randy-Halverson3.jpg) center center fixed;
+    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+    font-family: Roboto;
+    font-weight: 300
+;
 }
 
+/*Añadiendo animaciones? MAYBE? */
+
+
+@keyframes fadein {
+  from {
+    -webkit-opacity: 1;
+    opacity: 1;
+  }
+  to {
+    -webkit-opacity: 0;
+    opacity: 0;
+  }
+}
+
+
+
 /*Esto es parte de la parte de arriba*/
+
 div.radius-bottom {
     background: url();
     background-color: rgba(0,0,0,0.5);
@@ -24,30 +43,42 @@ div.radius-bottom {
     text-shadow: 0 0px 0px #000;
     color: grey;
 }
+
 a.w-link {
     border-radius: 50%;
     height: 35px;
 }
+
 /*imagenes de los paneles*/
+
 #follow-widget > img {
-	content:url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/usr.png)
+    content: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/usr.png)
+;
 }
+
 #apmwidget > img {
-	content:url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/inbox.png)
+    content: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/inbox.png)
+;
 }
+
 #widget-menu > li:nth-child(1) > a > img {
-	content:url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/set.png)
+    content: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/opciones/set.png)
+;
 }
 
 /*Esto define el logo de la pagina*/
+
 #adminbar > img {
     content: url(http://a1.mzstatic.com/us/r30/Purple7/v4/3b/26/8b/3b268b0e-0298-88f9-d9e8-35da12de1bc4/icon175x175.png);
     height: 50px;
     margin-left: 10px;
     border-radius: 50%;
 }
+
 /*Esto puede servir para la imagen circular*/
+
 /*Esta parte borra todo el panel cuadrado que encuadra la imagen*/
+
 a.avatar {
     background: rgba(0,0,0,0);
     color: rgba(0,0,0,0);
@@ -56,6 +87,7 @@ a.avatar {
 }
 
 /*esto hace que la imagen este redonda*/
+
 a.avatar img {
     border-radius: 50%;
     background-color: #000000;
@@ -64,17 +96,22 @@ a.avatar img {
 }
 
 /*Esto se encarga de darle todos los estilos al panel de info etc*/
+
 /*Esto es mas para eliminar todas las partes blancas que hay abajo, para hacer la transparencia.*/
+
 div.radius {
     background-color: rgba(0,0,0,0);
 }
+
 div.contentheader {
     background: rgba(255, 255, 255, 0);
     border: 0px;
 }
+
 table {
     background-color: rgba(0,0,0,0);
 }
+
 div.body-con {
     background: url();
     background-color: rgba(0,0,0,0);
@@ -82,25 +119,29 @@ div.body-con {
 }
 
 /*Y bueno, un poco más de sacar cosas blancas y finalmente, darle el toque de color y transparencia*/
+
 div.indexinfo {
     color: #fffcff;
     text-shadow: 0 0px 0px #000
 ;
-    font-family: Raleway;
+    font-family: Roboto;
     text-transform: none;
     text-decoration: none;
     font-size: 0.9em;
 }
+
 #content {
     color: #D0EAF1;
     background-color: rgba(0,0,0,0.5);
     border: 0px;
 }
+
 #content b {
     color: #1680c7;
     background-color: rgba(0,0,0,0);
     border: 0px;
 }
+
 ul#widget-menu li ul.widget-sub-nav li a, #tabs li a {
     background-image: URL();
     border-color: rgba(0,0,0,0);
@@ -113,49 +154,24 @@ ul#widget-menu li ul.widget-sub-nav li a, #tabs li a {
 }
 
 #acceptinfo {
-    font-family: Arimo;
-    font-weight: bold;
+    font-family: Roboto;
+    font-weight: 300;
     font-variant: normal;
     text-transform: none;
     font-size: 1.1em;
 }
 
-a.blocktab {
-    color: #b1cfe0;
-    font-family: Arimo;
-}
-
-a.removetab {
-    color: #b1cfe0;
-    font-family: Arimo;
-}
-
-tbody tr td {
-    background: url();
-    background-color: rgba(0,0,0,0);
-    color: #9fc9f5;
-    border-style: none;
-    font-family: Roboto Condensed;
-}
 #tabs {
     border: 0px;
-}
-
-a.tab {
-    color: white;
-    font-family: Roboto;
-}
-
-tr td b {
-    color: #1680c7;
-    font-family: Roboto Condensed;
 }
 
 div.profileinfo b {
     text-shadow: 0 0px 0px #000;
 }
+
 /*Esto es para las imagenes de compartir, son 22x22 asi no ocupan tanto. Aunque reemplazar esto requiere arreglar
 el texto de "Compartir mediante..."*/
+
 /*imagen 22x22 de fb*/
 
 #sharefb {
@@ -164,6 +180,7 @@ el texto de "Compartir mediante..."*/
     width: 25px;
     background-size: 22px;
 }
+
 #sharefb:hover {
     background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/fbh.png) no-repeat;
     height: 25px;
@@ -179,12 +196,14 @@ el texto de "Compartir mediante..."*/
     height: 25px;
     background-size: 22px;
 }
+
 #sharetw:hover {
     background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/twh.png) no-repeat;
     width: 25px;
     height: 25px;
     background-size: 22px;
 }
+
 /*imagen 22x22 de turumbuler*/
 
 #sharetumblr {
@@ -193,12 +212,14 @@ el texto de "Compartir mediante..."*/
     height: 25px;
     background-size: 22px;
 }
+
 #sharetumblr:hover {
     background: url(https://raw.githubusercontent.com/eldainosor/c2meMod-files/master/img/tbh.png) no-repeat;
     width: 25px;
     height: 25px;
     background-size: 22px;
 }
+
 /*Fix para el texto de compartir*/
 
 div.indexinfo div {
@@ -209,6 +230,7 @@ div.indexinfo div {
 
 /*Inputbox - O la parte de chat. Es recomenable editar los colores por un mismo color claro y oscuro. 
  el claro se usa en :focus, que es cuando se hace click. El resto es para que este normal*/
+
 input#inputbox {
     background-image: url();
     background-color: rgba(0,0,0,0);
@@ -224,11 +246,15 @@ input#inputbox:focus {
     text-shadow: 0 0px 0px #000;
     color: #0098EA;
 }
+
 /*Parte del shuffle, usuarios con imagenes circulares*/
+
 a.shufflelink img {
     border-radius: 50%;
 }
+
 /*Esto cambia la burbuja de lo que dice el usuario y su bio*/
+
 #tiptip_content {
     background-color: rgba(0,0,0,0.5);
     background-image: url();
@@ -238,105 +264,107 @@ a.shufflelink img {
     border-top-color: rgba(0,0,0,0.5);
 }
 
-
 /*FIN DE LA PARTE DE USUARIO CON SESIÓN INICIADA - Proximo: La parte de chat externo.*/
 
 /*Esto se va a usar cuando entremos al chat de alguien, para mantener el mismo estilo*/
+
 /*Esta es la parte de la info de perfil*/
 
-div.profileinfo b {
-    text-shadow: 0 0px 0px #000;
-}
-div.indexinfo {
-    color: #fffcff;
+div.profileinfo {
     text-shadow: 0 0px 0px #000
 ;
-    font-family: Raleway;
-    text-transform: none;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-div.profileinfo{ 
-	text-shadow: 0 0px 0px #000
-}
-
-div.contentheader {
-    background: rgba(255, 255, 255, 0);
-    border: 0px;
 }
 
 div.profileimg a img {
     border-radius: 50%;
 }
+
 /*Deshabilita el boton de Follow porque no me interesa, aunque  si se quiere se vuelve a habilitar*/
+
 /*Proximo a hacer: cambiar el color del boton, maybe*/
+
 button.followtogglex.mar-none.green {
-    display:none;
+    display: none;
 }
 
-
 /*FIN DE LA PARTE DE CHAT EXTERNO - Proximo: La parte de la pagina para iniciar sesion*/
+
 /*Esto saca el fondo del banner de c2 por uno transparente*/
+
 div.header {
     background-image: url();
     background-color: rgba(0,0,0,0.75);
 }
 
 /*Sacando iconos de usuarios en linea y asi*/
+
 span.icn.icnb_r.icnUsers {
-	display:none;
+    display: none;
 }
+
 span.icn.icnb_r.icnVcard {
-	display:none
+    display: none
+;
 }
 
 /*Cambiando de color las letras a blanco por cuestion de fondo de pagina*/
+
 div.boxTitle h2 {
-	color:white;
+    color: white;
 }
+
 /*Cajon de usuarios conectados, eliminando bordes y circulando imagenes*/
+
 body > div.main > div > div:nth-child(1) > div.f_Left.col2x > div > div.boxContent.boxUserOnline {
-	background:rgba(0,0,0,0.75);
-	border:0px;
-	}
+    background: rgba(0,0,0,0.75);
+    border: 0px;
+}
+
 div.alert.shuffleAlert {
     background-color: rgba(0,87,144,0.75);
     color: white;
     border: 0px;
 }
+
 a.btn.btnGrey {
-	background-image: url();
-	background-color: rgba(0,81,144,0.5);
-	border:1px solid rgba(0,81,144,1);
-	text-shadow: 0 0px 0px #000;
-	color: white;
+    background-image: url();
+    background-color: rgba(0,81,144,0.5);
+    border: 1px solid rgba(0,81,144,1);
+    text-shadow: 0 0px 0px #000;
+    color: white;
 }
-span.icn.icnb_l.icnSuffle{
-	display:none;
+
+span.icn.icnb_l.icnSuffle {
+    display: none;
 }
+
 body > div.main > div > div:nth-child(1) > div.f_Left.col2x > div > div.boxContent.boxUserOnline > ul li {
     border: 1px solid rgba(0,0,0,0)
 	;
 }
-body > div.main > div > div:nth-child(1) > div.f_Left.col2x > div > div.boxContent.boxUserOnline > ul li img{
+
+body > div.main > div > div:nth-child(1) > div.f_Left.col2x > div > div.boxContent.boxUserOnline > ul li img {
     border-radius: 50px;
 }
 
 /*Cambiando todo lo del otro lado para que sea similar al costado de usuarios*/
+
 a.btn.btnBlue {
-	background-image: url();
-	background-color: rgba(0,81,144,0.5);
-	border:1px solid rgba(0,81,144,1);
-	text-shadow: 0 0px 0px #000;
-	color: white;
+    background-image: url();
+    background-color: rgba(0,81,144,0.5);
+    border: 1px solid rgba(0,81,144,1);
+    text-shadow: 0 0px 0px #000;
+    color: white;
 }
+
 a.btn.btnFacebook {
-	background-image: url();
-	background-color: rgba(59,89,152,0.5);
-	border:1px solid rgba(59,89,152,1);
-	text-shadow: 0 0px 0px #000;
-	color: white;
+    background-image: url();
+    background-color: rgba(59,89,152,0.5);
+    border: 1px solid rgba(59,89,152,1);
+    text-shadow: 0 0px 0px #000;
+    color: white;
 }
+
 div.boxContent.signUpbox div {
     background-image: url();
     background: rgba(0,0,0,0.75);
@@ -346,14 +374,80 @@ body > div.main > div > div:nth-child(1) > div.f_Right.col1x > div > div.boxCont
     background: rgba(0,0,0,0);
     border: 0px;
 }
+
 #signupForm > ul {
     border: 0px;
 }
+
 /*So much to do, so much to see, cosas que me voy a saltear aqui*/
+
 /*Footer y final de la página*/
 
 div.footer {
     background-image: url();
     background-color: rgba(0,0,0,0.75);
-	text:white;
+    text: white;
 }
+
+tr td b {
+    color: #1680c7;
+    font-family: Roboto Condensed;
+}
+
+a.tab {
+    color: white;
+    font-family: Roboto Condensed;
+    font-weight: 300;
+}
+
+#tab1_content span a {
+    font-family: Roboto;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+#tab1_content span a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+tbody tr td {
+    background: url();
+    background-color: rgba(0,0,0,0);
+    color: #9fc9f5;
+    border-style: none;
+    font-family: Roboto Condensed;
+}
+
+tbody tr {
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#typing i {
+    animation-name: fadein;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div.indexinfo a {
+    color: #2196F3;
+    opacity: 0.7;
+}
+
+div.indexinfo a:hover {
+    opacity: 1;
+}
+
+a.removetab {
+    color: #b1cfe0;
+}
+
+a.blocktab {
+    color: #b1cfe0;
+}
+
