@@ -137,7 +137,7 @@ div.indexinfo {
 }
 
 #content b {
-    color: #1680c7;
+    color: #1976D2;
     background-color: rgba(0,0,0,0);
     border: 0px;
 }
@@ -390,7 +390,7 @@ div.footer {
 }
 
 tr td b {
-    color: #1680c7;
+    color: #1976D2;
     font-family: Roboto Condensed;
 }
 
@@ -414,7 +414,7 @@ a.tab {
 tbody tr td {
     background: url();
     background-color: rgba(0,0,0,0);
-    color: #9fc9f5;
+    color: #2196F3;
     border-style: none;
     font-family: Roboto Condensed;
 }
